@@ -718,20 +718,17 @@ async def makeButtons(bot: Client, m: Message, db: dict):
 
 
 LOGCHANNEL = Config.LOGCHANNEL
-try:
-    if Config.USER_SESSION_STRING is None:
-        raise KeyError
+if Config.USER_SESSION_STRING:
     LOGGER.info("Starting USER Session")
     userBot = Client(
         name="merge-bot-user",
         session_string=Config.USER_SESSION_STRING,
         no_updates=True,
     )
-
-except KeyError:
+else:
     userBot = None
     LOGGER.warning("No User Session, Default Bot session will be used")
-
+	
 
 if __name__ == "__main__":
     # with mergeApp:
