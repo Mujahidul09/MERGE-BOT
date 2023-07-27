@@ -1,4 +1,4 @@
-from requests import get as rget
+"""from requests import get as rget
 from __init__ import LOGGER
 import os
 import subprocess
@@ -54,4 +54,4 @@ if UPSTREAM_REPO is not None:
     if update.returncode == 0:
         LOGGER.info('Successfully updated with latest commit from UPSTREAM_REPO')
     else:
-        LOGGER.warning('Something went wrong while updating, check UPSTREAM_REPO if valid or not!')
+        LOGGER.warning('Something went wrong while updating, check UPSTREAM_REPO if valid or not!').  """
