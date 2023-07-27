@@ -1,6 +1,6 @@
 import asyncio
 import os
-import ffmpeg
+import ffmpeg as ff
 
 from bot import (
     LOGGER,
