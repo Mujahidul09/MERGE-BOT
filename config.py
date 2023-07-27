@@ -5,7 +5,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH" ,"f12c642a9f02932c1bc82bf4c1ddb776")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6425840613:AAGxXZm89m4D-tHDA4dW9zkWqNx9hfpXFOw")
     TELEGRAM_API = int(os.environ["TELEGRAM_API"]) if "TELEGRAM_API" in os.environ else 14557103
-    OWNER = os.environ.get("OWNER","5447134162")
+    OWNER = os.environ.get("OWNER","6029941553")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME" ,"th3gardener")
     PASSWORD = os.environ.get("PASSWORD","passw0rd")
     DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Zara02:zara02@cluster0.i5zmevo.mongodb.net/?retryWrites=true&w=majority")
